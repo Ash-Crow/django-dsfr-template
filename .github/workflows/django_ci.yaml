@@ -29,9 +29,11 @@ jobs:
       - name: Copy empty .env.example to .env
         run: |
           cp .env.example .env
-      - name: Run linting
-        run: |
-          make checkfiles
       - name: Run the unit tests
         run: |
           make test
+      - name: Run linting
+        run: |
+          pipenv install --dev
+          pre-commit install
+          make checkfiles
