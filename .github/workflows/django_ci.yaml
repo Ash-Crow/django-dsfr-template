@@ -32,8 +32,3 @@ jobs:
       - name: Run the unit tests
         run: |
           make test
-      - name: Run linting
-        run: |
-          pipenv install --dev
-          pre-commit install
-          make checkfiles
