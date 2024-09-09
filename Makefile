@@ -8,6 +8,10 @@ endif
 checkfiles:
 	pre-commit run --all-files
 
+.PHONY: messages
+messages:
+	pipenv run django-admin makemessages -l fr --ignore=manage.py
+
 .PHONY: test
 test:
 	pipenv run python manage.py test
@@ -20,4 +24,3 @@ runserver:
 update:
 	pipenv run python manage.py collectstatic --noinput
 	pipenv run python manage.py migrate
-
