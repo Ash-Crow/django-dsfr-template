@@ -11,5 +11,5 @@ class IndexTestCase(TestCase):
 
         self.assertContains(
             response,
-            "<title>Page de contenu — Titre du site</title>",
+            "<h1>Accueil</h1>",
         )
