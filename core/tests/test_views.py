@@ -9,7 +9,4 @@ class IndexTestCase(TestCase):
         response = self.client.get(reverse("index"))
         self.assertEqual(response.status_code, 200)
 
-        self.assertContains(
-            response,
-            "<h1>Accueil</h1>",
-        )
+        self.assertInHTML("<h1>Accueil</h1>", response.content.decode())
