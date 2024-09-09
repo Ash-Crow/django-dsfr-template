@@ -31,7 +31,7 @@ jobs:
           cp .env.example .env
       - name: Run linting
         run: |
-          make checkstyle
+          make checkfiles
       - name: Run the unit tests
         run: |
           make test
