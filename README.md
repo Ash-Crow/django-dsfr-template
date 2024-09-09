@@ -35,6 +35,11 @@ puis modifier en le contenu pour correspondre à votre configuration.
 pipenv install
 ```
 
+Pour une installation de dev en local, installer aussi les dépendances devs
+```
+pipenv install --dev
+```
+
 ### Configurer la base de données
 
 Installer PostgreSQL en fonction de votre OS : https://www.postgresql.org/download/
