@@ -68,6 +68,10 @@ Vous pouvez effectuer un premier passage sur tous les fichiers du repo avec :
 make checkstyle
 ```
 
+### Internationalisation
+Le dépôt est prêt pour l’[internationalisation](https://docs.djangoproject.com/en/5.0/topics/i18n/translation/).
+Taper `make messages` pour générer les chaînes à traduire, et effectuer la traduction avec un outil tel que [Poedit](https://poedit.net/).
+
 ### Exécuter les tests manuellement
 
 ```bash
