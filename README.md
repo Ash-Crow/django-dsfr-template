@@ -34,14 +34,22 @@ cp .env.example .env
 ```
 puis modifier en le contenu pour correspondre à votre configuration.
 
+- `HOST_URL` : le nom de domaine de l’URL principale de votre site, par exemple « mon-site.osc-fr1.scalingo.io »
+- `ALLOWED_HOSTS` : le ou les domaines autorisés à accéder au site, séparés par des virgules s’il y en a plusieurs. On peut déjà entrer le domaine définitif si on le connaît, donc : « mon-site.osc-fr1.scalingo.io,mon-site.beta.gouv.fr »
+- `SECRET_KEY` : clé secrète, par exemple générée dans un terminal avec la commande « `openssl rand -hex 32` »
+- `DATABASE_URL` : pré-remplie sur Scalingo
+- `DEBUG` : True en développement, False en production
+- `HOST_PORT` : le port sur lequel tourne le site (8000 par défaut)
+
 ### Installer l’environnement et les dépendances
 
-```
+```bash
 uv sync --no-dev
 ```
 
 Pour une installation de dev en local, installer aussi les dépendances devs
-```
+
+```bash
 uv sync
 ```
 
@@ -56,6 +64,12 @@ just update
 ```
 
 Cette commande peut être passée à chaque mise à jour.
+
+### Créer le superuser
+```bash
+just createsuperuser
+```
+
 
 ### Installation de pre-commit
 
