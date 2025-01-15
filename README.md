@@ -16,6 +16,7 @@ Ce repo est un kit de démarrage pour vos projets en Django. Il intègre :
   - [gunicorn](https://gunicorn.org/)
   - un fichier Procfile
   - [Cling](https://pypi.org/project/dj-static/) pour servir les fichiers statiques
+  - génération d’un requirements.txt puisque [le buildpack Python ne gère pas encore uv](https://github.com/heroku/heroku-buildpack-python/issues/1616)
 
 ## Use
 
