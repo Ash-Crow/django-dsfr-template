@@ -1,3 +1,32 @@
+[project]
+name = "django-dsfr-template"
+version = "0.1.0"
+description = "A starter Django project for use with the French Government Design System"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "dj-database-url>=2.3.0",
+    "dj-static>=0.0.6",
+    "django>=5.1.5",
+    "django-csp>=3.8",
+    "django-dsfr>=2.0.0",
+    "django-referrer-policy>=1.0",
+    "gunicorn>=23.0.0",
+    "psycopg2-binary>=2.9.10",
+    "python-dotenv>=1.0.1",
+]
+
+[dependency-groups]
+dev = [
+    "black>=24.10.0",
+    "django-debug-toolbar>=5.0.1",
+    "django-extensions>=3.2.3",
+    "djlint>=1.36.4",
+    "ipython>=8.31.0",
+    "pre-commit>=4.0.1",
+    "ruff>=0.9.1",
+]
+
 [tool.djlint]
 line_break_after_multiline_tag = true
 max_blank_lines = 1
