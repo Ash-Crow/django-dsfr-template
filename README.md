@@ -21,7 +21,7 @@ Ce repo est un kit de démarrage pour vos projets en Django. Il intègre :
 ## Use
 
 ```bash
-make runserver
+just runserver
 ```
 
 ## Installation
